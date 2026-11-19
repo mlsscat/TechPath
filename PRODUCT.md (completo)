@@ -1,0 +1,129 @@
+# PRODUCT.md --- TechPath
+
+## 1. Visão do produto
+
+**TechPath** é uma plataforma web para meninas e mulheres iniciantes em
+tecnologia conhecerem diferentes áreas, organizarem seus estudos por
+meio de trilhas de aprendizagem e acompanharem seu progresso.
+
+-   **Público-alvo:** meninas e mulheres iniciantes em tecnologia que
+    têm interesse em aprender, mas ainda não sabem por onde começar ou
+    como organizar seus estudos.
+-   **Uso:** individual, com cadastro e autenticação.
+-   **Problema resolvido:** falta de direcionamento para descobrir áreas
+    da tecnologia, escolher o que estudar e organizar a própria
+    aprendizagem.
+
+## 2. Escopo confirmado --- MVP
+
+A primeira versão terá até cinco funcionalidades principais:
+
+### F1 --- Cadastro e autenticação
+
+**História de usuário:** Como usuária, quero criar uma conta e fazer
+login para acessar e organizar minhas próprias informações.
+
+**Critérios de aceitação:** - Deve ser possível criar uma conta com os
+dados necessários. - O sistema deve permitir login e logout. - Cada
+usuária deve acessar somente seus próprios dados. - As senhas devem ser
+armazenadas de forma protegida.
+
+### F2 --- Exploração das áreas da tecnologia
+
+**História de usuário:** Como iniciante em tecnologia, quero conhecer
+diferentes áreas para entender suas possibilidades e identificar
+assuntos do meu interesse.
+
+**Critérios de aceitação:** - O catálogo deve apresentar um conjunto
+inicial de áreas da tecnologia. - Cada área deve apresentar o que é,
+possibilidades de atuação, conhecimentos utilizados, exemplos práticos e
+por onde começar. - Deve ser possível consultar as informações de cada
+área.
+
+### F3 --- Criação e gerenciamento de trilhas
+
+**História de usuário:** Como usuária, quero utilizar trilhas
+disponibilizadas pela plataforma, criar minhas próprias ou receber
+sugestões da inteligência artificial para organizar meus objetivos de
+aprendizagem.
+
+**Critérios de aceitação:** - Deve ser possível consultar trilhas
+iniciais relacionadas às áreas do catálogo. - Deve ser possível utilizar
+e personalizar essas trilhas. - Deve ser possível criar uma trilha do
+zero. - Deve ser possível editar e excluir as próprias trilhas. - A
+usuária deve poder solicitar sugestões à IA informando área de
+interesse, nível de conhecimento e objetivo. - A IA deve apresentar
+sugestões de atividades relacionadas às informações fornecidas. - As
+sugestões só devem ser adicionadas à trilha após análise e aprovação da
+usuária.
+
+### F4 --- Gerenciamento de atividades
+
+**História de usuário:** Como usuária, quero adicionar e organizar
+atividades nas minhas trilhas para acompanhar o que preciso estudar.
+
+**Critérios de aceitação:** - Deve ser possível adicionar atividades a
+uma trilha. - Deve ser possível editar e excluir atividades. - Cada
+atividade deve possuir um status, como pendente ou concluída. - Deve ser
+possível adicionar links de materiais de estudo às atividades. - Cada
+atividade deve estar vinculada à trilha correspondente.
+
+### F5 --- Acompanhamento do progresso
+
+**História de usuário:** Como usuária, quero visualizar meu progresso
+para identificar o que já concluí e o que ainda preciso realizar.
+
+**Critérios de aceitação:** - O sistema deve calcular automaticamente o
+progresso de cada trilha. - O cálculo deve considerar a quantidade de
+atividades concluídas em relação ao total de atividades. - O progresso
+deve ser atualizado quando o status de uma atividade for alterado. - O
+painel deve apresentar um resumo das trilhas e atividades em andamento
+ou concluídas. - Trilhas sem atividades devem apresentar progresso de
+0%.
+
+## 3. Regras de negócio
+
+-   Cada usuária terá acesso somente aos próprios dados.
+-   As trilhas disponibilizadas pela plataforma poderão ser utilizadas e
+    personalizadas sem alterar o modelo original.
+-   A usuária também poderá criar trilhas próprias, com ou sem vínculo a
+    uma área do catálogo.
+-   As atividades deverão pertencer a uma trilha.
+-   As sugestões geradas pela IA não serão salvas automaticamente: a
+    usuária deverá aprová-las antes de adicioná-las à trilha.
+-   O progresso será calculado pela fórmula: **(quantidade de atividades
+    concluídas ÷ quantidade total de atividades) × 100**.
+-   Quando uma trilha não possuir atividades, seu progresso será
+    considerado 0%.
+
+## 4. Dependências
+
+-   O cadastro e a autenticação são necessários para identificar as
+    usuárias e proteger seus dados.
+-   O catálogo e as trilhas iniciais precisam estar cadastrados para que
+    possam ser explorados.
+-   Uma trilha precisa existir antes que atividades sejam adicionadas a
+    ela.
+-   A criação de sugestões por IA depende da integração com um serviço
+    de inteligência artificial.
+-   O acompanhamento do progresso depende das atividades e de seus
+    status.
+-   O painel depende dos dados das trilhas e atividades.
+
+## 5. Fora do escopo do MVP e melhorias futuras
+
+Não fazem parte da primeira versão: - Rede social, publicações ou
+mensagens entre usuárias. - Chatbot de conversas livres ou histórico de
+conversas com IA. - Gerenciamento independente de projetos. - Plataforma
+própria de cursos ou aulas. - Aplicativo mobile nativo.
+
+Poderão ser avaliados futuramente: - Ampliação do catálogo de áreas e
+das trilhas iniciais. - Novas formas de acompanhamento da
+aprendizagem. - Melhorias nas sugestões da inteligência artificial.
+
+## 6. Características gerais
+
+-   Aplicação web acessível por computadores e dispositivos móveis.
+-   Interface adaptável a diferentes tamanhos de tela.
+-   Tecnologias previstas: HTML, CSS, JavaScript, PHP e MySQL.
+-   Documentação para instalação e execução do sistema.
